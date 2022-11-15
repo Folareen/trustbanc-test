@@ -3,14 +3,14 @@ import Login from "./pages/login/Login"
 import Dashboard from "./pages/dashboard/Dashboard"
 import NotFound from "./pages/notFound/NotFound"
 
-function App() {
-  const isLoggedIn = true
-  return (
+function App() {const {user, setUser} = useContext(AuthContext)  
+
+return (
     <div>
       <Router>
           <Routes>
           {
-          isLoggedIn
+          user
           ?
           <>
           <Route path='/' element={<Navigate replace to="/dashboard" />}/>

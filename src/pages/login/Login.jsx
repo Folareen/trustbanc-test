@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './login.css'
 import logo from '../../assets/white-trustbanc-logo.png'
+import { AuthContext } from '../../context/AuthContext'
 
 const InputField = ({type}) => (
   <input name={type} placeholder={type} type={type} className='input'  />
@@ -9,6 +10,13 @@ const InputField = ({type}) => (
 const inputTypes = ['Username', 'Password']
 
 const Login = () => {
+
+  const {user, setUser} = useContext(AuthContext)
+
+  const loginUser = () => {
+    setUser({username: 'user'})
+  }
+
   return (
     <div className='container'>
       <div className='login'>
@@ -40,7 +48,7 @@ const Login = () => {
               inputTypes.map(input => (<InputField type={input} /> ))
             }
 
-            <button type='submit' className='login-btn'>
+            <button type='submit' className='login-btn' onClick={loginUser}>
               LOGIN
             </button>
 

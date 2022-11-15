@@ -9,8 +9,10 @@ import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
 import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded";
 import './left-pane.css'
 import ExitToAppRoundedIcon from '@mui/icons-material/ExitToAppRounded';
+import { AuthContext } from '../../context/AuthContext';
 
 const LeftPane = () => {
+    const {user, setUser} = useContext(AuthContextt)
   return (
     <nav className='dashboard__left'>
 
@@ -74,7 +76,7 @@ const LeftPane = () => {
         </span>
       </a>
 
-      <button className='logout-btn'>
+      <button className='logout-btn' onClick={() => setUser(null)}>
         <ExitToAppRoundedIcon/>
         <span>
           logout
