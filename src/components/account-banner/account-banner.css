@@ -1,0 +1,76 @@
+.account-banner{
+    padding: 20px;
+    background-color: white;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.line{
+    background-color: rgba(197, 126, 55, 0.7);
+    border-radius: 5px;
+    width: 50px;
+    height: 6px;
+    display: inline-block;
+}
+
+h4{
+    color: #003679;
+    font-size: 18px;
+}
+
+.card-carousel{
+    display: flex;
+    align-items: center;
+}
+
+.left-arrow{
+    color: #DDDDDD;
+    flex:0.2
+}
+
+.right-arrow{
+    color: rgba(0, 54, 121, 0.65);
+    flex: 0.2;
+    text-align: center;
+}
+
+.card-details{
+    flex: 0.6;
+    background: linear-gradient(91.45deg, #003679 11.66%, #0354B8 93.2%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-items: space-between;
+    width: 345px;
+    padding: 15px;
+    text-transform: capitalize;
+    height: 164px;
+}
+
+.card-details__bottom{
+    margin-top: 10px;
+    text-align: right;
+}
+
+.account-type{
+    font-size: 16px;
+}
+
+.account-number{
+    font-size: 16px;
+}
+
+.available{
+    font-size: 18px;
+}
+
+.value{
+    font-size: 26px;
+}
+
+.book{
+    font-size: 16px;
+}

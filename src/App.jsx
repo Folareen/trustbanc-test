@@ -4,7 +4,7 @@ import Dashboard from "./pages/dashboard/Dashboard"
 import NotFound from "./pages/notFound/NotFound"
 
 function App() {
-  const isLoggedIn = false
+  const isLoggedIn = true
   return (
     <div>
       <Router>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './login.css'
-import logo from '../../assets/trustbanc.png'
+import logo from '../../assets/white-trustbanc-logo.png'
 
 const InputField = ({type}) => (
   <input name={type} placeholder={type} type={type} className='input'  />
