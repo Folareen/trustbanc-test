@@ -2,9 +2,13 @@ import {Navigate, BrowserRouter as Router, Routes, Route} from "react-router-dom
 import Login from "./pages/login/Login"
 import Dashboard from "./pages/dashboard/Dashboard"
 import NotFound from "./pages/notFound/NotFound"
+import { useContext } from "react"
+import { AuthContext } from "./context/AuthContext"
 
-function App() {const {user, setUser} = useContext(AuthContext)  
+function App() {
+  const {user, setUser} = useContext(AuthContext)  
 
+  console.log(user)
 return (
     <div>
       <Router>

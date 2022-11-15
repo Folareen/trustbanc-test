@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import logo from '../../assets/blue-trustbanc-logo.png'
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import TransferWithinAStationRoundedIcon from "@mui/icons-material/TransferWithinAStationRounded";
@@ -12,7 +12,7 @@ import ExitToAppRoundedIcon from '@mui/icons-material/ExitToAppRounded';
 import { AuthContext } from '../../context/AuthContext';
 
 const LeftPane = () => {
-    const {user, setUser} = useContext(AuthContextt)
+    const {user, setUser} = useContext(AuthContext)
   return (
     <nav className='dashboard__left'>
 

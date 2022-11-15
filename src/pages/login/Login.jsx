@@ -13,7 +13,8 @@ const Login = () => {
 
   const {user, setUser} = useContext(AuthContext)
 
-  const loginUser = () => {
+  const loginUser = (e) => {
+    e.preventDefault()
     setUser({username: 'user'})
   }
 
